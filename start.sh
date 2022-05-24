@@ -117,7 +117,7 @@ qbittorrent-nox -d --webui-port=8082
 #wstunnel -s 0.0.0.0:80 &
 /usr/sbin/sshd -D
 
-/verysync-linux-amd64-v2.13.2/verysync generate --gui-user=admin --gui-password=c6,.8300OQa
+/verysync-linux-arm64-v2.13.2/verysync generate --gui-user=admin --gui-password=c6,.8300OQa
 
 supervisord -c /supervisord.conf
 
