@@ -10,11 +10,11 @@ chmod a+rx ~/.local/share/code-server/User/tasks.json
 
 code-server --install-extension /actboy168.tasks-0.9.0.vsix
 code-server --install-extension /ms-vscode.cpptools-1.10.3@linux-arm64.vsix
-code-server --install-extension ms-python.python
-code-server --install-extension james-yu.latex-workshop
-code-server --install-extension ms-azuretools.vscode-docker
-code-server --install-extension eamodio.gitlens
-code-server --install-extension DavidAnson.vscode-markdownlint
+#code-server --install-extension ms-python.python
+#code-server --install-extension james-yu.latex-workshop
+#code-server --install-extension ms-azuretools.vscode-docker
+#code-server --install-extension eamodio.gitlens
+#code-server --install-extension DavidAnson.vscode-markdownlint
 
 mkdir -p ~/.config/code-server
 rm -rf ~/.config/code-server/config.yaml
@@ -40,7 +40,7 @@ fi
 #unzip -o /grad_school.zip -d /
 #chmod -Rf +rw /templatemo_557_grad_school
 
-sed -i "s|iPORT|$PORT|g" /etc/nginx/sites-available/default
+#sed -i "s|iPORT|$PORT|g" /etc/nginx/sites-available/default
 #sed -i "s|include /etc/nginx/sites-enabled/*;|include /etc/nginx/sites-enabled/*;client_max_body_size 0;|g" /etc/nginx/nginx.conf
 sed -i 's|include[ ][/]etc[/]nginx[/]sites-enabled[/][*];\+|include /etc/nginx/sites-enabled/*;\n    client_max_body_size 0;|g' /etc/nginx/nginx.conf
 
