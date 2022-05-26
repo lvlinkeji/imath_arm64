@@ -114,12 +114,12 @@ filebrowser users add root c68.300OQa --perm.admin
 qbittorrent-nox -d --webui-port=8082
 #qbittorrent username:admin password:adminadmin
 
-#wstunnel -s 0.0.0.0:80 &
-/usr/sbin/sshd -D
-
 /verysync-linux-arm64-v2.13.2/verysync generate --gui-user=admin --gui-password=c6,.8300OQa
 
 supervisord -c /supervisord.conf
+
+#wstunnel -s 0.0.0.0:80 &
+/usr/sbin/sshd -D
 
 while true
 do
